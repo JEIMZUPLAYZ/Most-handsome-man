@@ -214,13 +214,8 @@
         <h2>Most Handsome Man in the World</h2>
         <img id="randomImage" src="" alt="Handsome Man">
     </div>
-
     <a href="index.html" id="restartLink" style="display: none;" target="_blank">Restart Randomizer</a>
-
-    <!-- Help button -->
     <button class="help-button" onclick="openHelpModal()">?</button>
-
-    <!-- Developer details -->
     <div class="developer-details">
         Developed by <a href="https://www.facebook.com/profile.php?id=100079032697054" target="_blank">Jhames</a>
     </div>
@@ -229,7 +224,6 @@
     <script>
         let uploadedImageURL = "";
         let userName = "";
-
         function showUploadButton() {
             document.getElementById('startButton').style.display = 'none';
             document.getElementById('uploadButton').style.display = 'inline-block';
@@ -254,7 +248,6 @@
         function closeModal(modalId) {
             document.getElementById(modalId).style.display = 'none';
         }
-
         function submitUploadModal() {
             const fileInput = document.getElementById('upload');
             const file = fileInput.files[0];
